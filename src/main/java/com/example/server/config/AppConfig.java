@@ -1,8 +1,17 @@
 package com.example.server.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
-    // Database connection configuration and other settings
+    @Value("${server.port}")
+    private int serverPort;
+
+    // Other configuration properties and beans
+
+    // Getter for server port
+    public int getServerPort() {
+        return serverPort;
+    }
 }
