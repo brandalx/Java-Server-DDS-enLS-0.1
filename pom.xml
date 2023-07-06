@@ -10,7 +10,9 @@
 
   <properties>
     <spring.boot.version>2.5.2</spring.boot.version>
+    <javax.persistence.version>2.2</javax.persistence.version> <!-- Changed version here -->
   </properties>
+
 
   <dependencies>
     <!-- Spring Boot -->
@@ -25,6 +27,13 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
       <version>${spring.boot.version}</version>
+    </dependency>
+
+    <!-- Java Persistence API (JPA) -->
+    <dependency>
+      <groupId>javax.persistence</groupId>
+      <artifactId>javax.persistence-api</artifactId>
+      <version>${javax.persistence.version}</version>
     </dependency>
   </dependencies>
 
